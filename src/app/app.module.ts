@@ -11,6 +11,7 @@ import { DetComponent } from './components/det/det.component';
 import { CartComponent } from './components/cart/cart.component';
 
 import { routing } from './app.routing';
+import { FilterComponent } from './components/filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { routing } from './app.routing';
     CatComponent,
     ProdComponent,
     DetComponent,
-    CartComponent
+    CartComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
