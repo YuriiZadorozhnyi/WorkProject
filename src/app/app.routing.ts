@@ -8,7 +8,7 @@ import { CartComponent } from './components/cart/cart.component';
 
 const appRoutes: Routes = [
     {
-        path: 'home',
+        path: '',
         component: CatComponent 
     },
     {

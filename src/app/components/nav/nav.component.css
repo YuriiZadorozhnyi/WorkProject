@@ -20,3 +20,11 @@ ul {
 .dropDownMenu>li {
     background-color: #84a88a;
 }
+
+form {
+    background-color: #84a88a;
+}
+
+label, input {
+    margin: 3px;
+}

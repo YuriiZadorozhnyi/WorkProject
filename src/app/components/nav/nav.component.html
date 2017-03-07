@@ -1,11 +1,11 @@
 <ul class="menu">
 
-  <li>
-    <a href="/home">Categories</a>
-  </li>
+    <li>
+      <a href="/">Categories</a>
+    </li>
 
-  <li>
-    <a href="/production" (click)="toggle()">Products</a>
+    <li>
+      <a href="#" (click)="prodToggle()">Products</a>  <!-- if I set an refference (not #) my page reload and togle not working -->
       <div *ngIf="productStatusTogle">
         <ul class="dropDownMenu">
           <li *ngFor = "let category of categories">
@@ -21,6 +21,23 @@
 
     <li>
       <a href="/cart">Cart</a>
+    </li>
+
+    <li>
+      <a href="#" (click)="filtToggle()">Filter</a> <!-- if I set an refference (not #) my page reload and togle not working -->
+      <div *ngIf="filterStatusTogle">
+        <form>
+          <label>
+            Title
+            <input type="text">
+          </label>
+          <label>
+            Manufacturer
+            <input type="text">
+          </label>
+          <input type="submit">
+        </form>
+      </div>
     </li>
     
 </ul>

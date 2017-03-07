@@ -11,9 +11,13 @@ export class NavComponent implements OnInit {
 
   // menu products toggle with list of categories
   productStatusTogle: Boolean = false;
+  filterStatusTogle: Boolean = false;
 
-  toggle() {
+  prodToggle() {
     this.productStatusTogle = !this.productStatusTogle;
+  }
+  filtToggle() {
+    this.filterStatusTogle = !this.filterStatusTogle;
   }
 
   // get categories from MyService
