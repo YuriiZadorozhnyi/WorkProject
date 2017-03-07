@@ -1,0 +1,34 @@
+[
+    {
+        "category" : "tablets",
+        "manufacturer" : "lenovo",
+        "title" : "Lenovo Yoga Tablet",
+        "imgurl" : "#",
+        "price" : 250,
+        "evailable" : true
+    },
+    {
+        "category" : "tablets",
+        "manufacturer" : "sumsung",
+        "title" : "Sumsung MSX 4",
+        "imgurl" : "#",
+        "price" : 300,
+        "evailable" : true
+    },
+    {
+        "category" : "tablets",
+        "manufacturer" : "toshiba",
+        "title" : "Satelite 4",
+        "imgurl" : "#",
+        "price" : 350,
+        "evailable" : true
+    },
+    {
+        "category" : "tablets",
+        "manufacturer" : "sumsung",
+        "title" : "Sumsung Galaxy MS6",
+        "imgurl" : "#",
+        "price" : 400,
+        "evailable" : true
+    }
+]

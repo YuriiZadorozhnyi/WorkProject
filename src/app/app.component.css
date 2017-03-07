@@ -1,0 +1,16 @@
+h1 {
+    background-color: greenyellow; 
+    text-align: center;
+    margin-bottom: 0;
+}
+
+nav {
+    width: 20%;
+    float: left;
+}
+
+.content {
+    width: 79%;
+    float: right;
+}
+

@@ -1,0 +1,32 @@
+<ul class="menu">
+
+  <li>
+    <a href="/home">Categories</a>
+  </li>
+
+  <li>
+    <a href="/production" (click)="toggle(productStatusTogle)">Products</a>
+      <div *ngIf="productStatusTogle">
+        <ul class="dropDownMenu">
+          <li>
+            <a href="#">Category 1</a>
+          </li>
+          <li>
+            <a href="#">Category 2</a>
+          </li>
+          <li>
+            <a href="#">Category 3</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li>
+      <a href="#">Details</a>
+    </li>
+
+    <li>
+      <a href="#">Cart</a>
+    </li>
+    
+</ul>

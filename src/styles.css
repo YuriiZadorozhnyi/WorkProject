@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+ul, menu, dir {
+    -webkit-padding-start: 0px;
+    -moz-padding-start: 0px;
+    -o-padding-start: 0px;
+    -ms-padding-start: 0px;
+}

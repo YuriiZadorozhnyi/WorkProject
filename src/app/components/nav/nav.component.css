@@ -1,0 +1,22 @@
+ul {
+    width: 100%;
+    list-style-type: none;
+}
+
+.menu>li {
+    width: inherit;
+    margin: 5px;
+    border: 1px solid green;
+    border-radius: 3px;
+    background-color: #a9c6ae;
+}
+
+.menu>li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.dropDownMenu>li {
+    background-color: #84a88a;
+}
