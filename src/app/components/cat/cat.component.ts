@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { MyService } from '../../services/my.service';
 
@@ -7,7 +7,7 @@ import { MyService } from '../../services/my.service';
   templateUrl: './cat.component.html',
   styleUrls: ['./cat.component.css']
 })
-export class CatComponent {
+export class CatComponent implements OnInit {
 
   categories = [];
 

@@ -8,14 +8,8 @@
     <a href="/production" (click)="toggle(productStatusTogle)">Products</a>
       <div *ngIf="productStatusTogle">
         <ul class="dropDownMenu">
-          <li>
-            <a href="#">Category 1</a>
-          </li>
-          <li>
-            <a href="#">Category 2</a>
-          </li>
-          <li>
-            <a href="#">Category 3</a>
+          <li *ngFor = "let category of categories">
+            <a href="#"> {{category | uppercase}} </a>
           </li>
         </ul>
       </div>
