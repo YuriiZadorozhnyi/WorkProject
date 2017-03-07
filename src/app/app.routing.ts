@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { CatComponent } from './components/cat/cat.component';
 import { ProdComponent } from './components/prod/prod.component';
+import { DetComponent } from './components/det/det.component';
+import { CartComponent } from './components/cart/cart.component';
 
 const appRoutes: Routes = [
     {
@@ -12,7 +14,15 @@ const appRoutes: Routes = [
     {
         path: 'production',
         component: ProdComponent
+    },
+    {
+        path: 'details',
+        component: DetComponent 
+    },
+    {
+        path: 'cart',
+        component: CartComponent 
     }
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes); 
+export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
