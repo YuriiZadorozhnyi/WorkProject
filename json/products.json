@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "category" : 1,
+        "manufacturer" : "sumsung",
+        "title" : "Sumsung Galaxy S3",
+        "description" : 
+        "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
+        "imgurl" : "https://i5.walmartimages.com/asr/98d0cbd8-49ff-4921-9e3c-534e9b461420_1.84542d06c821c280613800a92a9bd024.jpeg",
+        "price" : 250,
+        "evailable" : true
+    },
+    {
+        "id": 2,
+        "category" : 1,
+        "manufacturer" : "Xiaomi",
+        "title" : "redmi note 4",
+        "description" : 
+        "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
+        "imgurl" : "https://i5.walmartimages.com/dfw/4ff9c6c9-9356/k2-_c59a878c-3d51-4807-aabd-84b0410de921.v1.jpg",
+        "price" : 300,
+        "evailable" : true
+    },
+    {
+        "id": 3,
+        "category" : 1,
+        "manufacturer" : "Meizu",
+        "title" : "Meizu M3",
+        "description" : 
+        "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
+        "imgurl" : "#",
+        "price" : 350,
+        "evailable" : true
+    },
+    {
+        "id": 4,
+        "category" : 1,
+        "manufacturer" : "sumsung",
+        "title" : "Sumsung Galaxy S6",
+        "description" : 
+        "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
+        "imgurl" : "#",
+        "price" : 400,
+        "evailable" : true
+    },
+    {
+        "id": 5,
+        "category" : 2,
+        "manufacturer" : "lenovo",
+        "title" : "Lenovo Yoga Tablet",
+        "imgurl" : "#",
+        "price" : 250,
+        "evailable" : true
+    },
+    {
+        "id": 6,
+        "category" : 2,
+        "manufacturer" : "sumsung",
+        "title" : "Sumsung MSX 4",
+        "imgurl" : "#",
+        "price" : 300,
+        "evailable" : true
+    },
+    {
+        "id": 7,
+        "category" : 2,
+        "manufacturer" : "toshiba",
+        "title" : "Satelite 4",
+        "imgurl" : "#",
+        "price" : 350,
+        "evailable" : true
+    },
+    {
+        "id": 8,
+        "category" : 2,
+        "manufacturer" : "sumsung",
+        "title" : "Sumsung Galaxy MS6",
+        "imgurl" : "#",
+        "price" : 400,
+        "evailable" : true
+    }
+]

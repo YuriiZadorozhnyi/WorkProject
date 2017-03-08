@@ -1,0 +1,21 @@
+<h1>Production component is loaded ...</h1>
+
+<input [(ngModel)]="manufacturer" placeholder="Manufacturer..." />
+
+Min: <input type="number" min="0" step="10" [(ngModel)]="minPrice" placeholder="Min Price..." />
+Max: <input type="number" min="0" step="10" [(ngModel)]="maxPrice" placeholder="Max Price..." />
+
+<div>
+    <div
+            class="product"
+            *ngFor="let product of products | filterManufacturer:manufacturer | filterMinPrice:minPrice | filterMaxPrice: maxPrice"
+            [routerLink]="['/product', product.id]"
+            tooltip="some text...   "
+    >
+        <img [src]="product?.imgurl">
+        <h3>{{product?.title}}</h3>
+        <div>{{product?.description}}</div>
+        <div>{{product?.manufacturer}}</div>
+        <div>{{product?.price}}$</div>
+    </div>
+</div>

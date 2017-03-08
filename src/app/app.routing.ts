@@ -2,7 +2,8 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { CatComponent } from './components/cat/cat.component';
-import { ProdComponent } from './components/prod/prod.component';
+import { ProductsComponent } from './components/products/products.component';
+import { ProductComponent } from './components/product/product.component';
 import { DetComponent } from './components/det/det.component';
 import { CartComponent } from './components/cart/cart.component';
 
@@ -12,8 +13,12 @@ const appRoutes: Routes = [
         component: CatComponent 
     },
     {
-        path: 'production',
-        component: ProdComponent
+        path: 'production/:id',
+        component: ProductsComponent
+    },
+    {
+        path: 'product/:id',
+        component: ProductComponent
     },
     {
         path: 'details',
