@@ -9,7 +9,6 @@ import { CategoryService } from '../../services/category.service';
 })
 export class NavComponent implements OnInit {
 
-
   // menu products toggle with list of categories
   productStatusTogle: Boolean = false;
   filterStatusTogle: Boolean = false;
@@ -24,14 +23,17 @@ export class NavComponent implements OnInit {
 
   // get categories from CategoryService
   categories: Array<any> = [];
+  products: Array<any> = [];
 
   constructor (private categoryService : CategoryService) {}
 
   ngOnInit() {
+
     this.categoryService.getCategories()
         .subscribe(data => {
           this.categories = data;
         });
+
   }
 
 }

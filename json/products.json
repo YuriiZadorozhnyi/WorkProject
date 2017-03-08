@@ -2,8 +2,8 @@
     {
         "id": 1,
         "category" : 1,
-        "manufacturer" : "sumsung",
-        "title" : "Sumsung Galaxy S3",
+        "manufacturer" : "samsung",
+        "title" : "Samsung Galaxy S3",
         "description" : 
         "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
         "imgurl" : "https://i5.walmartimages.com/asr/98d0cbd8-49ff-4921-9e3c-534e9b461420_1.84542d06c821c280613800a92a9bd024.jpeg",
@@ -13,7 +13,7 @@
     {
         "id": 2,
         "category" : 1,
-        "manufacturer" : "Xiaomi",
+        "manufacturer" : "xiaomi",
         "title" : "redmi note 4",
         "description" : 
         "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
@@ -24,7 +24,7 @@
     {
         "id": 3,
         "category" : 1,
-        "manufacturer" : "Meizu",
+        "manufacturer" : "meizu",
         "title" : "Meizu M3",
         "description" : 
         "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
@@ -35,8 +35,8 @@
     {
         "id": 4,
         "category" : 1,
-        "manufacturer" : "sumsung",
-        "title" : "Sumsung Galaxy S6",
+        "manufacturer" : "samsung",
+        "title" : "Samsung Galaxy S6",
         "description" : 
         "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
         "imgurl" : "http://www.samsung.com/global/galaxy/galaxys6/galaxy-s6-edge/images/galaxy-s6-edge_gallery_front_black.png",
@@ -57,8 +57,8 @@
     {
         "id": 6,
         "category" : 2,
-        "manufacturer" : "sumsung",
-        "title" : "Sumsung MSX 4",
+        "manufacturer" : "samsung",
+        "title" : "Samsung MSX 4",
         "description" : 
         "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
         "imgurl" : "https://images-na.ssl-images-amazon.com/images/I/81n-vugKcTL._SL1500_.jpg",
@@ -79,8 +79,8 @@
     {
         "id": 8,
         "category" : 2,
-        "manufacturer" : "sumsung",
-        "title" : "Sumsung Galaxy MS6",
+        "manufacturer" : "samsung",
+        "title" : "Samsung Galaxy MS6",
         "description" : 
         "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
         "imgurl" : "http://images.samsung.com/is/image/samsung/uk-galaxy-tab-4-10-1-t530-sm-t530nykabtu-000240638-dynamic2-black?$PD_GALLERY_JPG$",
