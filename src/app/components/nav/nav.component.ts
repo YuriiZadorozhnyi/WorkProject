@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { MyService } from '../../services/my.service';
+import { CategoryService } from '../../services/category.service';
 
 @Component({
   selector: 'app-nav',
@@ -8,6 +8,7 @@ import { MyService } from '../../services/my.service';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+
 
   // menu products toggle with list of categories
   productStatusTogle: Boolean = false;
@@ -20,13 +21,17 @@ export class NavComponent implements OnInit {
     this.filterStatusTogle = !this.filterStatusTogle;
   }
 
-  // get categories from MyService
-  categories = [];
 
-  constructor (private serv : MyService) {}
+  // get categories from CategoryService
+  categories: Array<any> = [];
+
+  constructor (private categoryService : CategoryService) {}
 
   ngOnInit() {
-    this.categories = this.serv.categories;
+    this.categoryService.getCategories()
+        .subscribe(data => {
+          this.categories = data;
+        });
   }
 
 }

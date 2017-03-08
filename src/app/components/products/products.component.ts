@@ -3,10 +3,12 @@ import {ActivatedRoute} from '@angular/router/index';
 
 import { ProductsService } from '../../services/production.service';
 
+import { CapitalizePipe } from "../../pipes/capitalize.pipe";
+
 @Component({
   selector: 'app-prod',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  styleUrls: ['./products.component.css'],
 })
 export class ProductsComponent {
 
@@ -24,7 +26,5 @@ export class ProductsComponent {
           })
 
   }
-
-
-  
+ 
 }

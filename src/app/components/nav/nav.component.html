@@ -9,7 +9,7 @@
       <div *ngIf="productStatusTogle">
         <ul class="dropDownMenu">
           <li *ngFor = "let category of categories">
-            <a href="javaScript:void(0)"> {{category | uppercase}} </a>
+            <a [routerLink]="['/production', category.id]"> {{category.name | uppercase}} </a>
           </li>
         </ul>
       </div>

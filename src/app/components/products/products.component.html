@@ -1,21 +1,25 @@
-<h1>Production component is loaded ...</h1>
 
-<input [(ngModel)]="manufacturer" placeholder="Manufacturer..." />
+<div class="productsFilter">
 
-Min: <input type="number" min="0" step="10" [(ngModel)]="minPrice" placeholder="Min Price..." />
-Max: <input type="number" min="0" step="10" [(ngModel)]="maxPrice" placeholder="Max Price..." />
+<input class="textInput" type="text" [(ngModel)]="manufacturer" placeholder="Manufacturer..." />
 
-<div>
+Min: <input class="numberInput" type="number" min="100" step="10" [(ngModel)]="minPrice" placeholder="Min Price..." />
+Max: <input class="numberInput" type="number" min="300" step="10" [(ngModel)]="maxPrice" placeholder="Max Price..." />
+
+</div>
+
     <div
             class="product"
             *ngFor="let product of products | filterManufacturer:manufacturer | filterMinPrice:minPrice | filterMaxPrice: maxPrice"
             [routerLink]="['/product', product.id]"
             tooltip="some text...   "
     >
+
         <img [src]="product?.imgurl">
-        <h3>{{product?.title}}</h3>
-        <div>{{product?.description}}</div>
-        <div>{{product?.manufacturer}}</div>
-        <div>{{product?.price}}$</div>
+        <div class="info">
+            <h3>{{product?.title | capitalize}}</h3>
+            <p class="productDescription">{{product?.description | capitalize}}</p>
+            <p class="productManufacturer">{{product?.manufacturer | uppercase}}</p>
+            <p  class="productCurrancy"> {{ product?.price | currency}}</p>
+        </div>
     </div>
-</div>

@@ -1,7 +1,13 @@
-<h1>{{product?.title}}</h1>
+<div>  
+    <div class="product">
 
-<img [src]="product?.imgurl">
-<div>{{product?.description}}</div>
-<div>{{product?.manufacturer}}</div>
-<div>{{product?.price}}$</div>
+        <h1>{{product?.title | capitalize}}</h1>
+
+        <img [src]="product?.imgurl">
+        <p class="productDescription">{{product?.description | capitalize}}</p>
+        <p>{{product?.manufacturer | uppercase}}</p>
+        <p>{{product?.price | currency }}</p>
+
+    </div>
+</div>
 

@@ -3,6 +3,8 @@ import {ActivatedRoute} from '@angular/router/index';
 
 import {ProductsService} from '../../services/production.service';
 
+import { CapitalizePipe } from "../../pipes/capitalize.pipe";
+
 @Component({
     selector: 'product',
     templateUrl: './product.component.html',

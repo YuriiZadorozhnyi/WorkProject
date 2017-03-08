@@ -28,7 +28,7 @@
         "title" : "Meizu M3",
         "description" : 
         "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
-        "imgurl" : "#",
+        "imgurl" : "http://img.allo.ua/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/m/e/meizu_m3_16gb_black.jpg",
         "price" : 350,
         "evailable" : true
     },
@@ -39,7 +39,7 @@
         "title" : "Sumsung Galaxy S6",
         "description" : 
         "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
-        "imgurl" : "#",
+        "imgurl" : "http://www.samsung.com/global/galaxy/galaxys6/galaxy-s6-edge/images/galaxy-s6-edge_gallery_front_black.png",
         "price" : 400,
         "evailable" : true
     },
@@ -48,7 +48,9 @@
         "category" : 2,
         "manufacturer" : "lenovo",
         "title" : "Lenovo Yoga Tablet",
-        "imgurl" : "#",
+        "description" : 
+        "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
+        "imgurl" : "http://www.notebookcheck.net/fileadmin/_processed_/csm_Lenovo_Yoga_Tablet_2_Pro_13_A_Hero__f2f2f62b38.jpg",
         "price" : 250,
         "evailable" : true
     },
@@ -57,7 +59,9 @@
         "category" : 2,
         "manufacturer" : "sumsung",
         "title" : "Sumsung MSX 4",
-        "imgurl" : "#",
+        "description" : 
+        "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
+        "imgurl" : "https://images-na.ssl-images-amazon.com/images/I/81n-vugKcTL._SL1500_.jpg",
         "price" : 300,
         "evailable" : true
     },
@@ -66,7 +70,9 @@
         "category" : 2,
         "manufacturer" : "toshiba",
         "title" : "Satelite 4",
-        "imgurl" : "#",
+        "description" : 
+        "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
+        "imgurl" : "http://images.esellerpro.com/2660/I/113/352/Toshiba%20Satellite%20Click%20Mini%20-4.jpg",
         "price" : 350,
         "evailable" : true
     },
@@ -75,7 +81,9 @@
         "category" : 2,
         "manufacturer" : "sumsung",
         "title" : "Sumsung Galaxy MS6",
-        "imgurl" : "#",
+        "description" : 
+        "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
+        "imgurl" : "http://images.samsung.com/is/image/samsung/uk-galaxy-tab-4-10-1-t530-sm-t530nykabtu-000240638-dynamic2-black?$PD_GALLERY_JPG$",
         "price" : 400,
         "evailable" : true
     }
