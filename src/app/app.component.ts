@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 
-import { NavComponent } from './components/nav/nav.component';
-import { CatComponent } from './components/cat/cat.component';
-
 import { MyService } from './services/my.service';
 
 @Component({
