@@ -10,6 +10,7 @@ import { MyService } from '../../services/my.service';
 export class CatComponent implements OnInit {
 
   categories = [];
+  products = [];
 
   constructor (private serv : MyService) {}
 
