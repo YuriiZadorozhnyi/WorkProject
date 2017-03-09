@@ -6,7 +6,10 @@
         <img [src]="product?.imgurl">
         <p class="productDescription">{{product?.description | capitalize}}</p>
         <p>{{product?.manufacturer | uppercase}}</p>
-        <p>{{product?.price | currency }}</p>
+        <p class="productPrice">{{ product?.price | currency}}</p>
+        <button>
+            <i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i>
+        </button>
 
     </div>
 </div>

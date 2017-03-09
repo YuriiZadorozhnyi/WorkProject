@@ -10,18 +10,20 @@ import { DetComponent } from './components/det/det.component';
 import { CartComponent } from './components/basket/basket.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './components/products/products.component';
+import { ProdComponent } from './components/prod/prod.component';
+import { FilterComponent } from './components/filter/filter.component';
 
 import { CategoryService } from './services/category.service';
 import { ProductsService } from './services/production.service';
+import { BasketService } from './services/basket.service';
 
 import { FilterManufacturerPipe } from './pipes/filter-manufacturer.pipe';
 import { FilterMinPricePipe } from './pipes/filter-min-price.pipe';
 import { FilterMaxPricePipe } from './pipes/filter-max-price.pipe';
 import { CapitalizePipe } from "./pipes/capitalize.pipe";
 
-
 import { routing } from './app.routing';
-import { FilterComponent } from './components/filter/filter.component';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { FilterComponent } from './components/filter/filter.component';
     CatComponent,
     ProductComponent,
     ProductsComponent,
+    ProdComponent,
     DetComponent,
     CartComponent,
     FilterComponent,
@@ -46,7 +49,8 @@ import { FilterComponent } from './components/filter/filter.component';
   ],
   providers: [
     CategoryService,
-    ProductsService
+    ProductsService, 
+    BasketService
   ],
   bootstrap: [AppComponent]
 })
