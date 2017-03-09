@@ -7,7 +7,7 @@
         <p class="productDescription">{{product?.description | capitalize}}</p>
         <p>{{product?.manufacturer | uppercase}}</p>
         <p class="productPrice">{{ product?.price | currency}}</p>
-        <button>
+        <button (click)='addToBasket(product, $event)'>
             <i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i>
         </button>
 

@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
 
+import { BasketService } from '../../services/basket.service';
+
 @Component({
   selector: 'app-cart',
   templateUrl: './basket.component.html',
   styleUrls: ['./basket.component.css']
 })
-export class CartComponent {
+export class BasketComponent {
 
+    constructor(private basket: BasketService) { }
+
+    productsQuantity = 2;
+
+    
 }

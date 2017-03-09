@@ -1,1 +1,21 @@
-<h1>Cart component is loaded ...</h1>
+    <div class="product" *ngFor="let product of basket.basketArr">
+
+        <div class="img">
+            <img [src]="product?.imgurl">
+        </div>
+
+        <div class="info">
+            <h3>{{product?.title | capitalize}} / {{product?.manufacturer | uppercase}}</h3>
+            <p class="productDescription">{{product?.description | capitalize}}</p>
+        </div>
+
+        <div class="calculations">
+           <p> Price: {{product?.price | currency}} </p>
+            <label>
+                Quantity: 
+                <input type="number" [(ngModel)]="productsQuantity">
+            </label>
+            <p> Total Price: {{product.price * productsQuantity}} </p>
+        </div>
+
+    </div>

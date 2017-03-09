@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { CatComponent } from './components/cat/cat.component';
 import { DetComponent } from './components/det/det.component';
-import { CartComponent } from './components/basket/basket.component';
+import { BasketComponent } from './components/basket/basket.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ProdComponent } from './components/prod/prod.component';
@@ -34,7 +34,7 @@ import { routing } from './app.routing';
     ProductsComponent,
     ProdComponent,
     DetComponent,
-    CartComponent,
+    BasketComponent,
     FilterComponent,
     FilterManufacturerPipe,
     FilterMinPricePipe,

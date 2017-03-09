@@ -6,7 +6,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProdComponent } from './components/prod/prod.component';
 import { DetComponent } from './components/det/det.component';
-import { CartComponent } from './components/basket/basket.component';
+import { BasketComponent } from './components/basket/basket.component';
 
 const appRoutes: Routes = [
     {
@@ -30,8 +30,8 @@ const appRoutes: Routes = [
         component: DetComponent 
     },
     {
-        path: 'cart',
-        component: CartComponent 
+        path: 'basket',
+        component: BasketComponent 
     }
 ];
 
