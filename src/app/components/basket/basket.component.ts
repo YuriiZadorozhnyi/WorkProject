@@ -12,6 +12,5 @@ export class BasketComponent {
     constructor(private basket: BasketService) { }
 
     productsQuantity = 2;
-
     
 }

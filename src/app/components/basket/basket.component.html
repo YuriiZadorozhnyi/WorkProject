@@ -1,3 +1,5 @@
+    <h1 *ngIf="basket.basketArr[0] === undefined">There is no any goods in basket ! Add it !!!</h1>
+    
     <div class="product" *ngFor="let product of basket.basketArr">
 
         <div class="img">
@@ -17,5 +19,9 @@
             </label>
             <p> Total Price: {{product.price * productsQuantity}} </p>
         </div>
+
+    </div>
+
+    <div class="sumUp">
 
     </div>
