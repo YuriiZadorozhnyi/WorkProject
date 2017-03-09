@@ -14,4 +14,5 @@ export class CategoryService {
         return this.http.get('/json/categories.json')
             .map(response => response.json())
     }
+    
 }

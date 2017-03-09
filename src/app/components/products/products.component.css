@@ -25,7 +25,7 @@ input {
 /* products view */
 .product {
     width: 48%;
-    height: 300px;
+    height: 350px;
     display: inline-block;
     padding: 15px;
     margin: 1%;
@@ -46,14 +46,27 @@ img {
     margin: auto;
 } 
 
-@media (max-width: 1060px) {
-    .product {
-        height: 350px;
-    }
+.productCurrancy {
+    display: inline-block;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+button i {
+    color: navy;
 }
 
 @media (max-width: 600px) {
     .product {
         width: 98%;
+    }
+}
+
+@media (max-width: 330px) {
+    .product {
+        height: 370px;
     }
 }
