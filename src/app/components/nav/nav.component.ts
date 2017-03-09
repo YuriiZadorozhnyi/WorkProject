@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { CategoryService } from '../../services/category.service';
+import { FilterService } from '../../services/filter.service';
 
 @Component({
   selector: 'app-nav',
@@ -25,7 +26,10 @@ export class NavComponent implements OnInit {
   categories: Array<any> = [];
   products: Array<any> = [];
 
-  constructor (private categoryService : CategoryService) {}
+  constructor (
+    private categoryService : CategoryService,
+    private filtering : FilterService,
+    ) {}
 
   ngOnInit() {
 

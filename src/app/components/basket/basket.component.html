@@ -1,5 +1,7 @@
     <h1 *ngIf="basket.basketArr[0] === undefined">There is no any goods in basket ! Add it !!!</h1>
-    
+
+
+        
     <div class="product" *ngFor="let product of basket.basketArr">
 
         <div class="img">
@@ -22,6 +24,27 @@
 
     </div>
 
-    <div class="sumUp">
+
+
+    <div class="sumUp" *ngIf="basket.basketArr[0] != undefined">
+
+        <div class="img">
+            <i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i>
+        </div>
+
+        <div class="info">
+            <ul>
+                <li *ngFor="let item of basket.basketArr">{{item.title}}</li>
+            </ul>
+        </div>
+
+        <div class="calculations">
+            <h3>
+                Total price:
+            </h3>
+            <p>
+                {{10000 | currency}}
+            </p>
+        </div>
 
     </div>

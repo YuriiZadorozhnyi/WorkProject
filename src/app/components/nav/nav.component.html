@@ -24,18 +24,17 @@
     </li>
 
     <li>
-      <a href="javaScript:void(0)" (click)="filtToggle()">Filter</a> <!-- if I set an refference (not #) my page reload and togle not working -->
+      <a routerLink="/filter" (click)="filtToggle()">Filter</a> <!-- if I set an refference (not #) my page reload and togle not working -->
       <div *ngIf="filterStatusTogle">
         <form>
           <label>
             Title
-            <input type="text">
+            <input type="text"> <!-- [(ngModel)]="filtering.title"  -->
           </label>
           <label>
             Manufacturer
-            <input type="text">
+            <input type="text"> <!--  [(ngModel)]="filtering.manufacturer"  -->
           </label>
-          <input type="submit">
         </form>
       </div>
     </li>

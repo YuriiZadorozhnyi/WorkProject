@@ -16,6 +16,7 @@ import { FilterComponent } from './components/filter/filter.component';
 import { CategoryService } from './services/category.service';
 import { ProductsService } from './services/production.service';
 import { BasketService } from './services/basket.service';
+import { FilterService } from './services/filter.service';
 
 import { FilterManufacturerPipe } from './pipes/filter-manufacturer.pipe';
 import { FilterMinPricePipe } from './pipes/filter-min-price.pipe';
@@ -50,7 +51,8 @@ import { routing } from './app.routing';
   providers: [
     CategoryService,
     ProductsService, 
-    BasketService
+    BasketService,
+    FilterService
   ],
   bootstrap: [AppComponent]
 })

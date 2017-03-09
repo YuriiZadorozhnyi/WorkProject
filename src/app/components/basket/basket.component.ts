@@ -13,4 +13,5 @@ export class BasketComponent {
 
     productsQuantity = 2;
     
+    
 }
