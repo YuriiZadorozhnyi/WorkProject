@@ -36,7 +36,7 @@ const appRoutes: Routes = [
     }, 
     {
         path: 'filter',
-        component: ProdComponent 
+        component: FilterComponent 
     }
 ];
 

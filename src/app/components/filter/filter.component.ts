@@ -9,7 +9,7 @@ import { CapitalizePipe } from "../../pipes/capitalize.pipe";
 @Component({
   selector: 'app-filter',
   templateUrl: './filter.component.html',
-  styleUrls: ['../products/products.component.css']
+  styleUrls: ['./filter.component.css']
 })
 export class FilterComponent {
 
@@ -18,7 +18,7 @@ export class FilterComponent {
   constructor(
       public productsService: ProductsService, 
       private basket: BasketService,
-      private filter: FilterService
+      private filtering: FilterService
   ){}
 
   ngOnInit() {

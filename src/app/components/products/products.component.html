@@ -8,6 +8,16 @@ Max: <input class="numberInput" type="number" min="300" step="10" [(ngModel)]="m
 
 </div>
 
+<product-item  
+    *ngFor="let product of products | 
+    filterManufacturer:manufacturer | 
+    filterMinPrice:minPrice | 
+    filterMaxPrice: maxPrice" 
+    [product]="product" (addToCart)="addToBasket(product)" 
+>
+</product-item>
+
+<!--
     <div
             class="product"
             *ngFor="let product of products | filterManufacturer:manufacturer | filterMinPrice:minPrice | filterMaxPrice: maxPrice"
@@ -26,3 +36,4 @@ Max: <input class="numberInput" type="number" min="300" step="10" [(ngModel)]="m
             </button>
         </div>
     </div>
+-->

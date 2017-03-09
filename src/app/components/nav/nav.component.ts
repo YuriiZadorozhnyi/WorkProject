@@ -10,6 +10,15 @@ import { FilterService } from '../../services/filter.service';
 })
 export class NavComponent implements OnInit {
 
+  categories: Array<any> = [];
+  products: Array<any> = [];
+  title: String;
+
+  constructor (
+  private categoryService : CategoryService,
+  private filtering : FilterService,
+    ) {}
+
   // menu products toggle with list of categories
   productStatusTogle: Boolean = false;
   filterStatusTogle: Boolean = false;
@@ -21,23 +30,11 @@ export class NavComponent implements OnInit {
     this.filterStatusTogle = !this.filterStatusTogle;
   }
 
-
-  // get categories from CategoryService
-  categories: Array<any> = [];
-  products: Array<any> = [];
-
-  constructor (
-    private categoryService : CategoryService,
-    private filtering : FilterService,
-    ) {}
-
   ngOnInit() {
-
     this.categoryService.getCategories()
         .subscribe(data => {
           this.categories = data;
         });
-
   }
 
 }

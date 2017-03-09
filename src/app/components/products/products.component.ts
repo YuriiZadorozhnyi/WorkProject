@@ -31,12 +31,9 @@ export class ProductsComponent {
           })
 
   }
-  
-  addToBasket(item, event) {
-    event.preventDefault();
-    event.stopPropagation();
-    this.basket.basketArr.push(item);
-    console.log(this.basket.basketArr);
+
+  addToBasket(item) {
+    this.basket.addItem(item);
   }
  
 }

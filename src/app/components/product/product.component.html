@@ -1,16 +1,15 @@
-<div>  
-    <div class="product">
+<div class="product" *ngIf="product">
 
-        <h1>{{product?.title | capitalize}}</h1>
+    <h1>{{product?.title | capitalize}}</h1>
 
-        <img [src]="product?.imgurl">
-        <p class="productDescription">{{product?.description | capitalize}}</p>
-        <p>{{product?.manufacturer | uppercase}}</p>
-        <p class="productPrice">{{ product?.price | currency}}</p>
-        <button (click)='addToBasket(product, $event)'>
-            <i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i>
-        </button>
+    <img [src]="product?.imgurl">
+    <p class="productDescription">{{product?.description | capitalize}}</p>
+    <p>{{product?.manufacturer | uppercase}}</p>
+    <p class="productPrice">{{ product?.price | currency}}</p>
+    <button (click)='addToBasket(product, $event)'>
+        <i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i>
+    </button>
 
-    </div>
 </div>
+
 

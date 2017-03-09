@@ -7,8 +7,8 @@ import { CapitalizePipe } from "../../pipes/capitalize.pipe";
 
 @Component({
   selector: 'app-prod',
-  templateUrl: '../products/products.component.html',
-  styleUrls: ['../products/products.component.css']
+  templateUrl: './prod.component.html',
+  styleUrls: ['./prod.component.css']
 })
 export class ProdComponent {
 
@@ -26,11 +26,10 @@ export class ProdComponent {
       });
   }
 
-      addToBasket(item, event) {
-        event.preventDefault();
-        event.stopPropagation();
-        this.basket.basketArr.push(item);
-        console.log(this.basket.basketArr);
-    }
+  addToBasket(item, event) {
+    event.preventDefault();
+    event.stopPropagation();
+    this.basket.basketArr.push(item);
+  }
 
 }

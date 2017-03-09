@@ -12,6 +12,7 @@ import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ProdComponent } from './components/prod/prod.component';
 import { FilterComponent } from './components/filter/filter.component';
+import { ProductItemComponent } from './components/product-item/product-item.component';
 
 import { CategoryService } from './services/category.service';
 import { ProductsService } from './services/production.service';
@@ -41,6 +42,7 @@ import { routing } from './app.routing';
     FilterMinPricePipe,
     FilterMaxPricePipe,
     CapitalizePipe,
+    ProductItemComponent
   ],
   imports: [
     BrowserModule,

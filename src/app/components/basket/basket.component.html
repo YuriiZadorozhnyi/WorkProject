@@ -2,30 +2,31 @@
 
 
         
-    <div class="product" *ngFor="let product of basket.basketArr">
+    <div class="product" *ngFor="let item of items">
 
         <div class="img">
-            <img [src]="product?.imgurl">
+            <img [src]="item.product?.imgurl">
         </div>
 
         <div class="info">
-            <h3>{{product?.title | capitalize}} / {{product?.manufacturer | uppercase}}</h3>
-            <p class="productDescription">{{product?.description | capitalize}}</p>
+            <h3>{{item.product?.title | capitalize}} / {{item.product?.manufacturer | uppercase}}</h3>
+            <p class="productDescription">{{item.product?.description | capitalize}}</p>
         </div>
 
         <div class="calculations">
-           <p> Price: {{product?.price | currency}} </p>
+           <p> Price: {{item.product?.price | currency}} </p>
             <label>
                 Quantity: 
-                <input type="number" [(ngModel)]="productsQuantity">
+                <input type="number" [(ngModel)]="item.count"> <!--   -->
             </label>
-            <p> Total Price: {{product.price * productsQuantity}} </p>
+            <p> Total Price: {{item.product.price * item.count}}  </p>
+            <p (click) = "basket.removeItem(item)" >X</p>
         </div>
 
     </div>
 
 
-
+<!--
     <div class="sumUp" *ngIf="basket.basketArr[0] != undefined">
 
         <div class="img">
@@ -48,3 +49,4 @@
         </div>
 
     </div>
+    -->

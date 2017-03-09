@@ -7,4 +7,16 @@ export class BasketService {
     
     public basketArr: Array<any> = [];
 
+    addItem(item) {
+        this.basketArr.push(item);
+    }
+
+    removeItem(item) {
+        let index = this.basketArr.indexOf(item);
+        if (index > -1) {
+            this.basketArr.splice(index, 1);
+        }
+    }
+
+
 }
