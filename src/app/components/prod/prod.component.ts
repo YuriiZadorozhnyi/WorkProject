@@ -31,5 +31,5 @@ export class ProdComponent {
     event.stopPropagation();
     this.basket.basketItems.push(item);
   }
-
+  
 }

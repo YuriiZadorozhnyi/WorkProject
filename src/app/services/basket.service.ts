@@ -1,91 +1,37 @@
 import { Injectable } from '@angular/core';
-import { Observable }     from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
 
 @Injectable()
 export class BasketService {
 
-basketItems: any;
+    basketItems: any = [];
 
-   constructor(){
-      this.basketItems = new Map();
-   }
-
-  getItems(){
+    getItems() {
         let basketItems = [];
-        for (var [key, value] of this.basketItems) {
-          basketItems.push({
-            count: value,
-            product: key
-          });
+        for (var k in this.basketItems){
+            if (!this.basketItems.hasOwnProperty(k)) {
+                return;
+            }
+            basketItems.push(this.basketItems[k]);
         }
         return basketItems;
-  }
-
-   addItem(item){
-         let count = this.basketItems.get(item);
-         if (count){
-            this.basketItems.set(item, ++count);
-             return;
-         }
-         this.basketItems.set(item, 1);
-   }
-
-   removeItem(item){
-        this.basketItems.delete(item);
-   }
-
-}
-
-
-/*  ************************** NEWER METHOD  ***************************************
-   constructor(){
-      this.basketItems = new Map();
-   }
-
-  getItems(){
-        let basketItems = [];
-        for (var [key, value] of this.basketItems) {
-          basketItems.push({
-            count: value,
-            product: key
-          });
-        }
-        return this.basketItems;
-  }
-
-   addItem(item){
-         let count = this.basketItems.get(item);
-         if (count){
-            this.basketItems.set(item, ++count);
-             return;
-         }
-         this.basketItems.set(item, 1);
-   }
-
-   removeItem(item){
-        this.basketItems.delete(item);
-   }
-
-
-
-}
-
-****************** OLD METHOD ****************************
-
-
-    public basketArr: Array<any> = [];
+    }
 
     addItem(item) {
-        this.basketArr.push(item);
+        event.preventDefault();                // check this again after modify prod.component view
+        event.stopPropagation();               // check this again after modify prod.component view
+        let el = this.basketItems[item.id];
+        if (el) {
+            el.count++;
+            return;
+        }
+        this.basketItems[item.id] = {
+            product: item,
+            count: 1
+        };
     }
 
     removeItem(item) {
-        let index = this.basketArr.indexOf(item);
-        if (index > -1) {
-            this.basketArr.splice(index, 1);
-        }
+        delete this.basketItems[item.id];
     }
 
 }
-*/

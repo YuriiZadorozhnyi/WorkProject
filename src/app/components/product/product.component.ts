@@ -1,7 +1,7 @@
-import {Component} from '@angular/core';
-import {ActivatedRoute} from '@angular/router/index';
+import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router/index';
 
-import {ProductsService} from '../../services/production.service';
+import { ProductsService } from '../../services/production.service';
 import { BasketService } from '../../services/basket.service';
 
 import { CapitalizePipe } from "../../pipes/capitalize.pipe";
