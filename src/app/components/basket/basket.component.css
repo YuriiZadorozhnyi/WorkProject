@@ -37,5 +37,10 @@ img {
 }
 
 input {
-    width: 99%;
+    width: 30%;
+}
+
+i {
+    color: red;
+    cursor: pointer;
 }

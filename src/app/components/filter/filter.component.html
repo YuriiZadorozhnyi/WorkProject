@@ -11,7 +11,7 @@ Max: <input class="numberInput" type="number" min="300" step="10" [(ngModel)]="m
         class="product"
         *ngFor="let product of products | 
         filterManufacturer:manufacturer | 
-        filterManufacturer:filtering.title | 
+        filterTitle:filtering.title | 
         filterManufacturer:filtering.manufacturer | 
         filterMinPrice:minPrice | 
         filterMaxPrice: maxPrice"

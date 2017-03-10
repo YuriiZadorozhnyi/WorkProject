@@ -33,7 +33,6 @@ export class ProductComponent {
         event.preventDefault();
         event.stopPropagation();
         this.basket.basketArr.push(item);
-        console.log(this.basket.basketArr);
     }
 
 

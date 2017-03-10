@@ -40,8 +40,11 @@ export class BasketComponent {
           break;
         }
         this.items.push(itemMap[key]);
+
       }
-    
-    } // end ngOnInit
+
+      this.basket.basketArr = this.items.slice();  // rewrite basket array
+
+    } // end ngOnInit 
 
 }
