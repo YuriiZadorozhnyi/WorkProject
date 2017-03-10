@@ -27,12 +27,12 @@ export class FilterComponent {
         this.products = data;
       });
   }
-
+/*
       addToBasket(item, event) {
         event.preventDefault();
         event.stopPropagation();
         this.basket.basketArr.push(item);
         console.log(this.basket.basketArr);
     }
-
+*/
 }

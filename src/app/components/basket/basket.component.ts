@@ -9,10 +9,16 @@ import { BasketService } from '../../services/basket.service';
 })
 export class BasketComponent {
 
-    items: Array<any>;
-
     constructor(private basket: BasketService) { }
 
+}
+
+
+
+
+
+
+/*
     ngOnInit() {
 
       let itemMap = {};
@@ -46,5 +52,5 @@ export class BasketComponent {
       this.basket.basketArr = this.items.slice();  // rewrite basket array
 
     } // end ngOnInit 
+*/
 
-}

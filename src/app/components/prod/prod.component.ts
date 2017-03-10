@@ -29,7 +29,7 @@ export class ProdComponent {
   addToBasket(item, event) {
     event.preventDefault();
     event.stopPropagation();
-    this.basket.basketArr.push(item);
+    this.basket.basketItems.push(item);
   }
 
 }
