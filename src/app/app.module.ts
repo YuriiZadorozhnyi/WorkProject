@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { CatComponent } from './components/cat/cat.component';
-import { DetComponent } from './components/det/det.component';
 import { BasketComponent } from './components/basket/basket.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './components/products/products.component';
@@ -36,7 +35,6 @@ import { routing } from './app.routing';
     ProductComponent,
     ProductsComponent,
     ProdComponent,
-    DetComponent,
     BasketComponent,
     FilterComponent,
     FilterManufacturerPipe,

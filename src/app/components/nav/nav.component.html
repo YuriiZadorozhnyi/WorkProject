@@ -9,14 +9,10 @@
       <div *ngIf="productStatusTogle">
         <ul class="dropDownMenu">
           <li *ngFor = "let category of categories">
-            <a [routerLink]="['/production', category.id]" [routerLinkActive]="['active']"> {{category.name | uppercase}} </a>
+            <a [routerLink]="['/production', category.id]" [routerLinkActive]="['active']"> {{category.name | capitalize}} </a>
           </li>
         </ul>
       </div>
-    </li>
-
-    <li>
-      <a routerLink="/details" [routerLinkActive]="['active']">Details</a>
     </li>
 
     <li>
@@ -31,11 +27,11 @@
       <div *ngIf="filterStatusTogle">
         <form>
           <label>
-            Title
+            <p>Title</p>
             <input type="text" name="title"        [(ngModel)]="filtering.title" />   
           </label>
           <label>
-            Manufacturer
+            <p>Manufacturer</p>
             <input type="text" name="manufacturer" [(ngModel)]="filtering.manufacturer" /> 
           </label>
         </form>

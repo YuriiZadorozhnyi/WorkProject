@@ -3,14 +3,16 @@ import { Http} from '@angular/http';
 import { Observable }     from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
+import { ProductTemplate } from '../types/product-template.interface';
+
 @Injectable()
 export class ProductsService {
 
-    public products: Array<any> = [];
+    public products: Array<ProductTemplate> = [];
 
     constructor(public http: Http) {}
 
-    getProducts(): Observable<any[]> {
+    getProducts(): Observable<Array<ProductTemplate>> {
         return this.http.get('/json/products.json')
             .map(response => response.json())
     }

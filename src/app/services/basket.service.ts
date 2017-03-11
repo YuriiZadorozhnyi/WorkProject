@@ -33,13 +33,11 @@ export class BasketService {
     }
 
     totalSum() {
-        var sum = 0;
-        for(var i = 1; i < this.basketItems.length; i++) {
+        let sum = 0;
+        for(let i = 1; i < this.basketItems.length; i++) {
             if(this.basketItems[i] != undefined) {
                 sum += this.basketItems[i].product.price * this.basketItems[i].count;
-            } else {
-                continue;
-            }
+            } 
         }
         return sum;
     }

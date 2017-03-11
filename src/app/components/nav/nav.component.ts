@@ -4,6 +4,8 @@ import { CategoryService } from '../../services/category.service';
 import { FilterService } from '../../services/filter.service';
 import { BasketService } from '../../services/basket.service';
 
+import { CapitalizePipe } from "../../pipes/capitalize.pipe";
+
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -19,7 +21,7 @@ export class NavComponent implements OnInit {
   private categoryService : CategoryService,
   private filtering : FilterService,
   private basket: BasketService
-    ) {}
+  ) {}
 
   // menu products toggle with list of categories
   productStatusTogle: Boolean = false;
