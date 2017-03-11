@@ -26,10 +26,8 @@ export class ProdComponent {
       });
   }
 
-  addToBasket(item, event) {
-    event.preventDefault();
-    event.stopPropagation();
-    this.basket.basketItems.push(item);
+  addToBasket(item) {
+    this.basket.addItem(item);
   }
   
 }

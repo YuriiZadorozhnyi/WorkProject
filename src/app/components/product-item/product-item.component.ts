@@ -12,10 +12,10 @@ export class ProductItemComponent {
   @Input() product;
   @Output() addToCart = new EventEmitter();
 
-  addToBasket($event) {
+  addToBasket() {   // event parameter removed - testing
     event.preventDefault();
     event.stopPropagation();
-    this.addToCart.next();
+    this.addToCart.emit();  // next changet to emmit - testing (info - next is deprecated)
   }
 
 }
