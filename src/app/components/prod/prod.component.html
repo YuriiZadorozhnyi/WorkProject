@@ -14,26 +14,3 @@ Max: <input class="numberInput" type="number" min="300" step="10" [(ngModel)]="m
     [product]="product" (addToCart)="addToBasket(product)" 
 >
 </product-item>
-
-<!--
-<div
-        class="product"
-        *ngFor="let product of products | filterManufacturer:manufacturer | filterMinPrice:minPrice | filterMaxPrice: maxPrice"
-        [routerLink]="['/product', product.id]"
-        tooltip="some text...   "
->
-
-    <img [src]="product.imgurl">
-    <div class="info">
-        <h3>{{product.title | capitalize}}</h3>
-        <p class="productDescription">{{product.description | capitalize}}</p>
-        <p class="productManufacturer">{{product.manufacturer | uppercase}}</p>
-        <p class="productPrice">{{ product.price | currency}}</p>
-        <button (click)='basket.addItem(product)'>
-<-       <button (click)='addToBasket(product, $event)'>   ->
-            <i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i>
-        </button>
-    </div>
-    
-</div>
--->

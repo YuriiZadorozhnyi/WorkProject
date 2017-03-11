@@ -14,10 +14,7 @@ export class ProdComponent {
 
   public products: Array<any> = [];
 
-  constructor(
-      public productsService: ProductsService, 
-      private basket: BasketService
-  ){}
+  constructor(public productsService: ProductsService, private basket: BasketService){}
 
   ngOnInit() {
     this.productsService.getProducts()
