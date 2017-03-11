@@ -11,7 +11,7 @@ import { BasketComponent } from './components/basket/basket.component';
 
 const appRoutes: Routes = [
     {
-        path: '',
+        path: 'home',
         component: CatComponent 
     },
     {

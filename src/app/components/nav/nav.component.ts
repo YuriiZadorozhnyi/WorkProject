@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { CategoryService } from '../../services/category.service';
 import { FilterService } from '../../services/filter.service';
+import { BasketService } from '../../services/basket.service';
 
 @Component({
   selector: 'app-nav',
@@ -17,6 +18,7 @@ export class NavComponent implements OnInit {
   constructor (
   private categoryService : CategoryService,
   private filtering : FilterService,
+  private basket: BasketService
     ) {}
 
   // menu products toggle with list of categories
