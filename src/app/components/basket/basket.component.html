@@ -26,27 +26,26 @@
 
 </div>
 
-<!--   SUM UP SECTION 
-    <div class="sumUp" *ngIf="basket.basketArr[0] != undefined">
 
-        <div class="img">
-            <i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i>
-        </div>
+<div class="sumUp" *ngIf="basket.getItems().length != 0">
 
-        <div class="info">
-            <ul>
-                <li *ngFor="let item of basket.basketArr">{{item.title}}</li>
-            </ul>
-        </div>
-
-        <div class="calculations">
-            <h3>
-                Total price:
-            </h3>
-            <p>
-                {{10000 | currency}}
-            </p>
-        </div>
-
+    <div class="img">
+        <i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i>
     </div>
-    -->
+
+    <div class="info">
+        <ul>
+            <li *ngFor="let item of basket.getItems()">{{item.product.title | capitalize}}</li>
+        </ul>
+    </div>
+
+    <div class="calculations">
+        <h3>
+            Total price:
+        </h3>
+        <p>
+            {{basket.totalSum()}}
+        </p>
+    </div>
+
+</div>

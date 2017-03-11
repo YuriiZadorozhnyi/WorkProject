@@ -17,8 +17,6 @@ export class BasketService {
     }
 
     addItem(item) {
-        event.preventDefault();                // check this again after modify prod.component view
-        event.stopPropagation();               // check this again after modify prod.component view
         let el = this.basketItems[item.id];
         if (el) {
             el.count++;
@@ -32,6 +30,18 @@ export class BasketService {
 
     removeItem(item) {
         delete this.basketItems[item.id];
+    }
+
+    totalSum() {
+        var sum = 0;
+        for(var i = 1; i < this.basketItems.length; i++) {
+            if(this.basketItems[i] != undefined) {
+                sum += this.basketItems[i].product.price * this.basketItems[i].count;
+            } else {
+                continue;
+            }
+        }
+        return sum;
     }
 
 }
