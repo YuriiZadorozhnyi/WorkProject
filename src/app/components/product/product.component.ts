@@ -13,8 +13,7 @@ import { CapitalizePipe } from "../../pipes/capitalize.pipe";
 })
 export class ProductComponent {
 
-    public product: any;
-    public id: number;
+    public product: any; /*    public id: number;  */ /* tasting */
 
     constructor(
       public productsService: ProductsService, 
@@ -30,10 +29,7 @@ export class ProductComponent {
     }
 
     addToBasket(item, event) {
-        event.preventDefault();
-        event.stopPropagation();
         this.basket.basketItems.push(item);
     }
-
 
 }

@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class CategoryService {
 
-    public categories: Array<any> = [];
+/*    public categories: Array<any> = [];   */
 
     constructor(public http: Http){}
 
