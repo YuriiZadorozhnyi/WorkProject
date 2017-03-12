@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router/index';
 
 import { ProductsService } from '../../services/production.service';
 import { BasketService } from '../../services/basket.service';
+import { FilterService } from '../../services/filter.service';
 
 import { CapitalizePipe } from "../../pipes/capitalize.pipe";
 
@@ -18,7 +19,8 @@ export class ProductsComponent {
   constructor(
       public productsService: ProductsService, 
       private route: ActivatedRoute, 
-      private basket: BasketService
+      private basket: BasketService,
+      private filtering: FilterService
   ) { }
 
   ngOnInit() {

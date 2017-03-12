@@ -4,8 +4,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { CatComponent } from './components/cat/cat.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductComponent } from './components/product/product.component';
-import { ProdComponent } from './components/prod/prod.component';
-import { FilterComponent } from './components/filter/filter.component';
 import { BasketComponent } from './components/basket/basket.component';
 
 const appRoutes: Routes = [
@@ -31,7 +29,7 @@ const appRoutes: Routes = [
     }, 
     {
         path: 'filter',
-        component: FilterComponent 
+        component: ProductsComponent
     }
 ];
 
