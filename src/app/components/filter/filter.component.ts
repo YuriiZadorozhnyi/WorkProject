@@ -6,6 +6,8 @@ import { FilterService } from '../../services/filter.service';
 
 import { CapitalizePipe } from "../../pipes/capitalize.pipe";
 
+import { ProductTemplate } from '../../types/product-template.interface';
+
 @Component({
   selector: 'app-filter',
   templateUrl: './filter.component.html',
@@ -13,7 +15,7 @@ import { CapitalizePipe } from "../../pipes/capitalize.pipe";
 })
 export class FilterComponent {
 
-  public products: Array<any> = [];
+  public products: Array<ProductTemplate> = [];
 
   constructor(
       public productsService: ProductsService, 
@@ -28,7 +30,7 @@ export class FilterComponent {
       });
   }
 
-  addToBasket(item) {
+  addToBasket(item : ProductTemplate) {
     this.basket.addItem(item);
   }
 

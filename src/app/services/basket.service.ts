@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class BasketService {
 
-    basketItems: any = [];
+    basketItems: Array<any> = [];
 
     getItems() {
         let basketItems = [];

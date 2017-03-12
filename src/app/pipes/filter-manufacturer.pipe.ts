@@ -7,10 +7,13 @@ import {Injectable, Pipe, PipeTransform} from '@angular/core';
 export class FilterManufacturerPipe implements PipeTransform {
 
     transform(items: any[], args: any[]): any {
-        if (!args){
-            return items;
-        }
-        return items.filter(item => item.manufacturer.indexOf(args) !== -1);
+/*
+        let argsLowerCase : any[] = [];
+
+        for (var i = 0; i < args.length; i ++) { argsLowerCase = args[i].toLowerCase(); }; */
+
+        return !args ? items : items.filter(item => item.manufacturer.toLowerCase().indexOf(args) !== -1);
+
     }
 
 }
