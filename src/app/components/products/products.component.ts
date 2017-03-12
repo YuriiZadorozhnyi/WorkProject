@@ -14,24 +14,25 @@ import { CapitalizePipe } from "../../pipes/capitalize.pipe";
 })
 export class ProductsComponent {
 
-  public products: Array<any> = [];
+    public products: Array<any> = [];
+    public sortToggle : Number = 0;
 
-  constructor(
-      public productsService: ProductsService, 
-      private route: ActivatedRoute, 
-      private basket: BasketService,
-      private filtering: FilterService
-  ) { }
+    constructor(
+        public productsService: ProductsService, 
+        private route: ActivatedRoute, 
+        private basket: BasketService,
+        private filtering: FilterService
+    ) { }
 
-  ngOnInit() {
+    ngOnInit() {
     var idParametr: Number = undefined;
 
-      this.route.params
-          .subscribe((params) => {
-              this.productsService.getProducts()
-                  .subscribe(data => {
-                      this.products = data.filter(el => el.category == params['id']);
-                      idParametr = params['id'];
+        this.route.params
+            .subscribe((params) => {
+                this.productsService.getProducts()
+                    .subscribe(data => {
+                        this.products = data.filter(el => el.category == params['id']);
+                        idParametr = params['id'];
 
                         if (idParametr === undefined) {
                             this.productsService.getProducts()
@@ -43,10 +44,28 @@ export class ProductsComponent {
                 })
         });
 
-  }
+    }
 
-  addToBasket(item) {
-    this.basket.addItem(item);
-  }
- 
+    addToBasket(item) {
+        this.basket.addItem(item);
+    }
+
+    sortDesc() {
+        this.products.sort((a, b) => {
+            if (a.price > b.price) return -1;
+            else if (a.price < b.price) return 1;
+            else return 0;
+        });
+        this.sortToggle = -1;
+    }
+
+    sortAsc(products) {
+        this.products.sort((a, b) => {
+            if (a.price < b.price) return -1;
+            else if (a.price > b.price) return 1;
+            else return 0;
+        });
+        this.sortToggle = 1;
+    }
+
 }
