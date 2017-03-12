@@ -1,20 +1,19 @@
 <div class="productsFilter">
 
-<input class="textInput" type="text" [(ngModel)]="manufacturer" placeholder="Manufacturer..." />
+<input class="textInput" type="text" [(ngModel)]="filtering.manufacturer" placeholder="Manufacturer..." />
 
 Min: <input class="numberInput" type="number" min="100" step="10" [(ngModel)]="minPrice" placeholder="Min Price..." />
 Max: <input class="numberInput" type="number" min="300" step="10" [(ngModel)]="maxPrice" placeholder="Max Price..." /> 
 
 Price:
-<button type="button" (click)='sortAsc(products)' [ngClass]="{'active': sortToggle === 1}">ASC</button>
-<button type="button" (click)='sortDesc(products)' [ngClass]="{'active': sortToggle === -1}">DESC</button>
+<button type="button" (click)='sortAsc(products)' [ngClass]="{'activeSort': sortToggle === 1}">ASC</button>
+<button type="button" (click)='sortDesc(products)' [ngClass]="{'activeSort': sortToggle === -1}">DESC</button>
 
 </div>
 
 <product-item  
-    *ngFor="let product of products | filterManufacturer: manufacturer | 
-                                      filterTitle:filtering.title | 
-                                      filterManufacturer:filtering.manufacturer | 
+    *ngFor="let product of products | filterManufacturer: filtering.manufacturer | 
+                                      filterTitle: filtering.title | 
                                       filterMinPrice: minPrice | 
                                       filterMaxPrice: maxPrice" 
     [product]="product" (addToCart)="addToBasket(product)" 
