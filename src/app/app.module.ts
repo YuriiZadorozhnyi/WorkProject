@@ -9,7 +9,6 @@ import { CatComponent } from './components/cat/cat.component';
 import { BasketComponent } from './components/basket/basket.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './components/products/products.component';
-import { ProdComponent } from './components/prod/prod.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
 
@@ -34,7 +33,6 @@ import { routing } from './app.routing';
     CatComponent,
     ProductComponent,
     ProductsComponent,
-    ProdComponent,
     BasketComponent,
     FilterComponent,
     FilterManufacturerPipe,

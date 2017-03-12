@@ -22,13 +22,24 @@ export class ProductsComponent {
   ) { }
 
   ngOnInit() {
+    var idParametr: Number = undefined;
+
       this.route.params
           .subscribe((params) => {
               this.productsService.getProducts()
                   .subscribe(data => {
                       this.products = data.filter(el => el.category == params['id']);
-                  });
-          })
+                      idParametr = params['id'];
+
+                        if (idParametr === undefined) {
+                            this.productsService.getProducts()
+                            .subscribe(data => {
+                                this.products = data;
+                            });
+                        }
+
+                })
+        });
 
   }
 

@@ -23,7 +23,7 @@ const appRoutes: Routes = [
     },
     {
         path: 'products',
-        component: ProdComponent
+        component: ProductsComponent
     },
     {
         path: 'basket',
