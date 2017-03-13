@@ -4,7 +4,7 @@
     display: inline-block;
     padding: 15px;
     margin: 1%;
-    background-color: #eee;
+    background-color: white;
     border: 3px solid navy;
     border-radius: 10px;
     text-align: center;
@@ -28,10 +28,12 @@ img {
 button {
     border: none;
     cursor: pointer;
+    background-color: white;
 }
 
 button i {
     color: navy;
+    background-color: white;
 }
 
 @media (max-width: 600px) {
