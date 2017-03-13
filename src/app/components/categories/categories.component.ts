@@ -4,8 +4,8 @@ import { CategoryService } from '../../services/category.service';
 
 @Component({
   selector: 'app-cat',
-  templateUrl: './cat.component.html',
-  styleUrls: ['./cat.component.css']
+  templateUrl: './categories.component.html',
+  styleUrls: ['./categories.component.css']
 })
 export class CategoriesComponent implements OnInit {
 
