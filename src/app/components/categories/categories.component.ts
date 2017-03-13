@@ -7,7 +7,7 @@ import { CategoryService } from '../../services/category.service';
   templateUrl: './cat.component.html',
   styleUrls: ['./cat.component.css']
 })
-export class CatComponent implements OnInit {
+export class CategoriesComponent implements OnInit {
 
   categories: Array<any> = [];
 

@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
-import { CatComponent } from './components/cat/cat.component';
+import { CategoriesComponent } from './components/categories/categories.component';
 import { BasketComponent } from './components/basket/basket.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './components/products/products.component';
@@ -29,7 +29,7 @@ import { routing } from './app.routing';
   declarations: [
     AppComponent,
     NavComponent,
-    CatComponent,
+    CategoriesComponent,
     ProductComponent,
     ProductsComponent,
     BasketComponent,

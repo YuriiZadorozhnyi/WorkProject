@@ -1,7 +1,7 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { CatComponent } from './components/cat/cat.component';
+import { CategoriesComponent } from './components/categories/categories.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductComponent } from './components/product/product.component';
 import { BasketComponent } from './components/basket/basket.component';
@@ -9,7 +9,7 @@ import { BasketComponent } from './components/basket/basket.component';
 const appRoutes: Routes = [
     {
         path: 'home',
-        component: CatComponent 
+        component: CategoriesComponent 
     },
     {
         path: 'production/:id',
