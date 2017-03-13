@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import {APP_BASE_HREF} from '@angular/common';  // added for testing purposes
+
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { CategoriesComponent } from './components/categories/categories.component';
@@ -47,6 +49,7 @@ import { routing } from './app.routing';
     routing
   ],
   providers: [
+    {provide: APP_BASE_HREF, useValue : '/' },   // added for testing purposes
     CategoryService,
     ProductsService, 
     BasketService,

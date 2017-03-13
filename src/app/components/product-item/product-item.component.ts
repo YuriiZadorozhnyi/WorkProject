@@ -1,6 +1,8 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
-import { CapitalizePipe } from "../../pipes/capitalize.pipe";
+import { CapitalizePipe } from "../../pipes/capitalize.pipe"; 
+
+import { ProductTemplate } from '../../types/product-template.interface';
 
 @Component({
   selector: 'product-item',
@@ -9,10 +11,10 @@ import { CapitalizePipe } from "../../pipes/capitalize.pipe";
 })
 export class ProductItemComponent {
 
-  @Input() product;
+  @Input() public product : ProductTemplate;         //   interface added
   @Output() addToCart = new EventEmitter();
 
-  addToBasket(event : Event) {  
+  addToBasket(event) {  
     event.preventDefault();
     event.stopPropagation();
     this.addToCart.emit();
