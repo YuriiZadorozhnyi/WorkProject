@@ -1,3 +1,11 @@
+h2 {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Baloo Bhaina', cursive;
+}
+
 .product, .sumUp {
     width: 98%;
     height: auto;
@@ -8,7 +16,6 @@
     border-radius: 10px;
     text-align: center;
     vertical-align: center;
-
     display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;

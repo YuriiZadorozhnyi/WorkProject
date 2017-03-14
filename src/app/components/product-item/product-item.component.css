@@ -47,3 +47,9 @@ button i {
         height: 370px;
     }
 }
+
+@media (min-width: 1200px) {
+    .product {
+        width: 31.3%;
+    }
+}
