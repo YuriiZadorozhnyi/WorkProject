@@ -22,7 +22,7 @@ import { FilterManufacturerPipe } from './pipes/filter-manufacturer.pipe';
 import { FilterTitlePipe } from './pipes/filter-title.pipe';
 import { FilterMinPricePipe } from './pipes/filter-min-price.pipe';
 import { FilterMaxPricePipe } from './pipes/filter-max-price.pipe';
-import { CapitalizePipe } from "./pipes/capitalize.pipe";
+import { CapitalizePipe } from './pipes/capitalize.pipe';
 
 import { routing } from './app.routing';
 
@@ -51,7 +51,7 @@ import { routing } from './app.routing';
   providers: [
     {provide: APP_BASE_HREF, useValue : '/' },   // added for testing purposes
     CategoryService,
-    ProductsService, 
+    ProductsService,
     BasketService,
     FilterService
   ],
